@@ -24,8 +24,20 @@ This repository provides an empirical, black-box study of the **real operational
 
 See subdirectories for certificate generation, TLS server, client, experiments, and analysis.
 
-## How to run (after download)
+---
+
+## One-Command Reproducibility (ZIP users)
+
+### Requirements
+
+- Linux or macOS
+- Windows **with WSL (Ubuntu)**
+- Python 3.9+
+- OpenSSL
+
+### Run everything
+
+After downloading and unzipping the repository, open a terminal **inside the repository directory** and run:
 
 ```bash
-python experiments/run_experiments.py --config experiments/configs.yaml
-python analysis/plot_results.py --input data/results.csv --output-dir figures
+bash run_all.sh

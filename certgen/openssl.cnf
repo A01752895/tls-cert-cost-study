@@ -1,0 +1,27 @@
+
+[ req ]
+default_bits = 2048
+distinguished_name = dn
+prompt = no
+
+[ dn ]
+C = MX
+ST = State
+L = City
+O = TLS Cost Study
+OU = Research
+CN = placeholder
+
+[ v3_root_ca ]
+basicConstraints = critical,CA:true
+keyUsage = critical,keyCertSign,cRLSign
+
+[ v3_intermediate_ca ]
+basicConstraints = critical,CA:true
+keyUsage = critical,keyCertSign,cRLSign
+
+[ v3_leaf ]
+basicConstraints = critical,CA:false
+keyUsage = digitalSignature,keyEncipherment
+extendedKeyUsage = serverAuth
+subjectAltName = DNS:localhost,IP:127.0.0.1

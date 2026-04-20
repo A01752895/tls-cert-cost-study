@@ -1,0 +1,4 @@
+protocols: [tls1_2, tls1_3]
+algorithms: [rsa, ecdsa]
+depths: [0, 1, 2, 3]
+repetitions: 30
